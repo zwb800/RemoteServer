@@ -1,6 +1,5 @@
 package com.web;
 
-import gnu.io.CommPort;
 import gnu.io.SerialPort;
 import gnu.io.SerialPortEvent;
 import gnu.io.SerialPortEventListener;

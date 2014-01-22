@@ -1,10 +1,5 @@
 package com.web;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.Enumeration;
-
-import gnu.io.CommPort;
 import gnu.io.CommPortIdentifier;
 import gnu.io.NoSuchPortException;
 import gnu.io.PortInUseException;
@@ -12,12 +7,10 @@ import gnu.io.SerialPort;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -25,7 +18,6 @@ import org.json.JSONObject;
 public class Serial {
 	private static final String PORT = "COM1";
 	private static SerialPort port = null;
-	private long[] data;
 
 	public static boolean running = false;
 	
